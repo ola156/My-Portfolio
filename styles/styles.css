@@ -52,7 +52,7 @@ body {
   color: white;
   font-size: 18px;
   position: relative;
-  transition: 0.5s;
+  transition: ease-in-out 0.5s;
   letter-spacing: 1px;
   font-weight: 700;
 }
@@ -71,6 +71,7 @@ body {
 .nav-items li a:hover::after {
   width: 100%;
 }
+
 .nav-items li a:hover {
 }
 /* --- hero-------- */
@@ -100,6 +101,12 @@ body {
   background-color: #d80145;
   color: #fff;
   letter-spacing: 1px;
+  transition: ease-in 0.3s;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #fff;
 }
 .hero-bottom {
   position: absolute;
