@@ -72,8 +72,6 @@ body {
   width: 100%;
 }
 
-.nav-items li a:hover {
-}
 /* --- hero-------- */
 
 .header-text {
@@ -123,4 +121,35 @@ body {
 .hero-bottom h1 {
   text-align: right;
   margin-top: 5px;
+}
+
+/*-------------- About-----------------*/
+#about {
+  display: flex;
+  justify-content: center;
+  padding: 40px 5px;
+}
+.about-text {
+  margin: 30px 0px;
+}
+.about-text span {
+  color: #d80145;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.col:first-child {
+  width: 60%;
+}
+
+.col:last-child {
+  width: 38%;
 }
