@@ -38,20 +38,93 @@
         </div>
       </div>
     </div>
+    <!-----------about----------->
     <div id="about">
       <div class="container">
-        <div>
-          <h1 class="about-text"><span>About</span> Me</h1>
-        </div>
         <div class="row">
-          <div class="col">
-            <h1>col 1</h1>
+          <div class="column-1">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+              alias dolore? Vitae nesciunt quod incidunt totam ea deleniti
+              inventore earum omnis tempore dolorem, dicta praesentium
+              necessitatibus perspiciatis iste excepturi consectetur. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Fuga porro,
+              obcaecati qui optio incidunt necessitatibus laboriosam illo
+              explicabo ab sapiente ullam animi adipisci aspernatur? Voluptatem
+              error ullam eos delectus voluptate.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2025 - current </span><br />Web App Training At FreeCode
+                  Camp
+                </li>
+                <li>
+                  <span>2023 - 2024 </span><br />
+                  Front-end web designer at ozone
+                </li>
+                <li>
+                  <span>2023 - 2024 </span><br />
+                  Internship at Rockbim
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>Web Development</span><br />Html & Css</li>
+                <li><span>Web Development</span><br />JavaScript</li>
+                <li>
+                  <span>Web Development</span><br />JavaScript Framework (React)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - 2024 </span><br />
+                  Front-end web designer at ozone
+                </li>
+                <li>
+                  <span>Web Development</span><br />Built an E commerce Wbsite
+                  For Khay Stitches
+                </li>
+                <li>
+                  <span>Web Development</span><br />Bulit A School Website
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col">
-            <h1>col-2</h1>
+
+          <div class="column-2">
+            <img src="images/about.jpg" alt="my picture" />
           </div>
         </div>
       </div>
     </div>
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContents = document.getElementsByClassName("tab-contents");
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
