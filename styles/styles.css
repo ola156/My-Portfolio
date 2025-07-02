@@ -70,7 +70,6 @@ body {
 .nav-items li a:hover::after {
   width: 100%;
 }
-
 /* --- hero-------- */
 
 .header-text {
