@@ -70,6 +70,63 @@ body {
 .nav-items li a:hover::after {
   width: 100%;
 }
+
+.menu-icon {
+  display: none;
+}
+
+.skills {
+  width: 80%;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill p {
+  font-size: 15px;
+}
+
+.skill span {
+  color: #d80145;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.html-div {
+  margin: 5px 4px 15px 4px;
+  width: 100%;
+  background-color: rgba(255, 228, 196, 0.205);
+  height: 5px;
+  border-radius: 3px;
+}
+
+.ht {
+  background-color: #d80145;
+  height: 100%;
+}
+
+.html5 {
+  width: 90%;
+}
+
+.css {
+  width: 85%;
+}
+.tailwind {
+  width: 70%;
+}
+.boot {
+  width: 80%;
+}
+.js {
+  width: 75%;
+}
+.react {
+  width: 60%;
+}
 /* --- hero-------- */
 
 .header-text {
